@@ -2,12 +2,7 @@ import 'package:flutter/material.dart';
 import './tasks.dart';
 
 class TaskData extends ChangeNotifier {
-  List<Task> _tasks = [
-    Task(name: 'buy milk'),
-    Task(name: 'Buy a car'),
-    Task(name: 'Buy a TV'),
-    Task(name: 'Buy new stuff'),
-  ];
+  List<Task> _tasks = [];
   int selectedIndex;
   int get taskCount {
     return _tasks.length;
